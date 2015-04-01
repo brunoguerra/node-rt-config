@@ -21,5 +21,22 @@
   "bugs": {
     "url": "https://github.com/brunoguerra/node-rt-config/issues"
   },
-  "homepage": "https://github.com/brunoguerra/node-rt-config"
+  "homepage": "https://github.com/brunoguerra/node-rt-config",
+  "dependencies": {
+    "redis": "^0.12.1"
+  },
+  "devDependencies": {
+    "debug": "^2.1.1",
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0",
+    "grunt-contrib-watch": "^0",
+    "grunt-mocha-test": "^0",
+    "jshint": "^0",
+    "mocha": "^2.1.0",
+    "mocha-lcov-reporter": "^0",
+    "chai": "^2.0",
+    "chai-as-promised": "^4.2",
+    "sinon": "^1.13",
+    "sinon-chai": "^2.7",
+  }
 }
