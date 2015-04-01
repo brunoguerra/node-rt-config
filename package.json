@@ -1,0 +1,25 @@
+{
+  "name": "node-rt-config",
+  "version": "0.0.1",
+  "description": "Keep configuration on-line with your adapter",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brunoguerra/node-rt-config"
+  },
+  "keywords": [
+    "config",
+    "realtime",
+    "refresh",
+    "loadable"
+  ],
+  "author": "Bruno Guerra <brunoguerrait@gmail.com> (brunoguerra.github.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brunoguerra/node-rt-config/issues"
+  },
+  "homepage": "https://github.com/brunoguerra/node-rt-config"
+}
