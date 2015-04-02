@@ -12,10 +12,10 @@ use
 ```javascript
 var rt_config = require('rt-config');
 
-// reads any entitrie form storage manager
+// reads any entry form storage manager
 var value = rt_config().someKey.deeplyGoing.propertyName;
 
-// invalidate config and force to reaload from storage manager
+// invalidate config and force to reaload from storage manager on next call
 rt_config.invalidate();
 ```
 
@@ -37,9 +37,9 @@ var locations = rtConfig().jedies.location;
 proposal features
 -----------------
 
-- receives push from redis and refresh configuration
+ - receives push from redis and refresh configuration
 
 Authors
 -----------------
-- @brunoguerra - developer
-- @ericsaboia - reviwer
+ - @brunoguerra - developer
+ - @ericsaboia - reviwer
