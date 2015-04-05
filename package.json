@@ -1,10 +1,10 @@
 {
   "name": "node-rt-config",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Keep configuration on-line with your adapter",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "make test"
   },
   "repository": {
     "type": "git",
@@ -25,6 +25,9 @@
   "dependencies": {
     "redis": "^0.12.1"
   },
+  "dependencies": {
+    "config": "~1"
+  },
   "devDependencies": {
     "debug": "^2.1.1",
     "grunt": "^0.4.5",
@@ -38,5 +41,6 @@
     "chai-as-promised": "^4.2",
     "sinon": "^1.13",
     "sinon-chai": "^2.7",
+    "js-yaml": "~3.2"
   }
 }

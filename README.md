@@ -2,44 +2,72 @@ rt-config
 =================
 This module helps you to keep your system configuration on-line
 
-install
+Installation
 -----------------
 npm install rt-config
 
-use
+Usage
 -----------------
 
 ```javascript
-var rt_config = require('rt-config');
+var rtconfig = require('rt-config');
 
 // reads any entry form storage manager
-var value = rt_config().someKey.deeplyGoing.propertyName;
+var value = rtconfig().someKey.deeplyGoing.propertyName;
 
 // invalidate config and force to reaload from storage manager on next call
-rt_config.invalidate();
+rtconfig.invalidate();
 ```
 
-extendable
+Extensible
 -----------------
+
 You can change storage manager any time you want.
 
 ```javascript
-var rtConfig = require('rt-config');
+var rtconfig = require('rt-config');
 
 // change storage manager
-rtConfig.storage('rt-config-my-manager');
+rtconfig.storage('rt-config-my-manager');
 
-// gets config form your manager 
-var locations = rtConfig().jedies.location;
+// gets config form your manager
+var locations = rtconfig().jedi.location;
 
 ```
 
-proposal features
+Default (and Simple) Storage Manger
 -----------------
 
- - receives push from redis and refresh configuration
+The default Storage Manger is a simple Yaml file reader, which does it with your Yaml preferred parser (see (node-config)[https://github.com/lorenwest/node-config]).
+
+Assing location of your reloadable config file under config_rt_file root key of config, so it will be parsed
+
+```javascript
+var defaultYamlConfigLocation = config.config_rt_file
+```
+
+Contributing
+-----------------
+
+In lieu of a formal styleguide, take care to maintain the existing coding style.
+Add unit tests for any new or changed functionality. Lint and test your code.
+
+Release History
+-----------------
+
+* 0.1.0 Reloadable configs
+
+Milestones
+-----------------
+
+* 0.2.0 receives push from redis and refresh configuration
+
+Test
+-----------------
+
+  npm test
 
 Authors
 -----------------
- - @brunoguerra - developer
- - @ericsaboia - reviwer
+ - @brunoguerra
+ - @ericsaboia
